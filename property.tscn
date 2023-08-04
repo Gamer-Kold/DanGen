@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjf8iocoojig1"]
+
+[ext_resource type="Script" path="res://property.gd" id="1_mwi6d"]
+
+[node name="Property" type="HBoxContainer"]
+size_flags_vertical = 3
+tooltip_text = "Test
+"
+script = ExtResource("1_mwi6d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="SpinBox" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 0.0
+step = 0.0
+allow_greater = true
+allow_lesser = true
+
+[connection signal="value_changed" from="TextEdit" to="." method="_on_text_edit_value_changed"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bihaw2t14p5pg"]
+
+[ext_resource type="Script" path="res://DanmakuData.gd" id="1_6akcm"]
+
+[node name="DanmakuData" type="Node"]
+script = ExtResource("1_6akcm")

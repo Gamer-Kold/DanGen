@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ber61s0x8qt3g"]
+
+[ext_resource type="Script" path="res://bullet_shape.gd" id="1_08mx1"]
+
+[node name="BulletShape" type="Node2D"]
+position = Vector2(576, 317)
+script = ExtResource("1_08mx1")

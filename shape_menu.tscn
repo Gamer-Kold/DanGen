@@ -1,0 +1,161 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfo2u4uwxr6op"]
+
+[ext_resource type="PackedScene" uid="uid://bjf8iocoojig1" path="res://property.tscn" id="1_dogap"]
+[ext_resource type="Script" path="res://shape_menu.gd" id="1_nj0vc"]
+[ext_resource type="Script" path="res://origin.gd" id="3_rlr27"]
+[ext_resource type="Script" path="res://image_selector.gd" id="4_l1t8t"]
+
+[sub_resource type="Image" id="Image_fiesn"]
+data = {
+"data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 255, 33, 37, 50, 244, 255, 255, 255, 0, 255, 255, 255, 0, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 69, 130, 177, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 68, 125, 170, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 143, 185, 216, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 92, 153, 198, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 65, 64, 66, 255, 65, 64, 66, 255, 71, 140, 191, 255, 255, 255, 255, 255, 71, 140, 191, 255, 65, 64, 66, 255, 65, 64, 66, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 255, 255, 255, 255, 119, 170, 208, 255, 71, 140, 191, 255, 255, 255, 255, 255, 71, 140, 191, 255, 237, 244, 249, 255, 255, 255, 255, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 144, 175, 201, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 154, 181, 203, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 92, 153, 198, 255, 71, 140, 191, 255, 255, 255, 255, 255, 71, 140, 191, 255, 255, 255, 255, 255, 71, 140, 191, 255, 255, 255, 255, 255, 71, 140, 191, 255, 70, 136, 185, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 71, 138, 189, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 71, 140, 191, 255, 66, 116, 158, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 33, 37, 50, 243, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 255, 255, 255, 0, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 54, 61, 82, 255, 43, 48, 64, 255),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_edk8f"]
+image = SubResource("Image_fiesn")
+
+[node name="Shape" type="VBoxContainer"]
+size_flags_vertical = 3
+theme_override_constants/separation = 7
+script = ExtResource("1_nj0vc")
+
+[node name="bullet_array_number" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "Number of arrays in the simulation"
+label = "Total number of bullet arrays"
+is_int = true
+default_value = 2.0
+
+[node name="bullets_per_array" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "The number of bullet arms per array"
+label = "Bullets per array"
+is_int = true
+default_value = 2.0
+
+[node name="space_btw_arrays" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "The angle (in degrees) between two adjacent arrays"
+label = "Space Between Bullet Arrays"
+default_value = 180.0
+
+[node name="space_in_array" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "The angle (in degrees) between the two furthermost bullet arms in an array"
+label = "Spread Within Arrays"
+default_value = 90.0
+
+[node name="starting_angle" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "The angle in degrees, the bullets start off pointing at"
+label = "Starting Angle"
+
+[node name="spin_rate" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "Rate of change of spin"
+label = "Spin Rate"
+default_value = 1.0
+
+[node name="spin_rate_rate" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "The rate of change of rate of 
+change of spin"
+label = "Spin Rate Rate"
+default_value = 0.1
+
+[node name="max_spin_rate" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "If not set to 0, the spin rate will reverse directions when it exceeds this value"
+label = "Max Spin Rate"
+default_value = 100.0
+
+[node name="fire_rate" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "How many times per second do the bullets spawn"
+label = "Fire Rate"
+default_value = 100.0
+
+[node name="bullet_speed" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "The initial spoed of bullet"
+label = "Bullet Speed"
+default_value = 100.0
+
+[node name="bullet_acceleration" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "The accelaration of the bullet"
+label = "Bullet Acceleration"
+
+[node name="bullet_ttl" parent="." instance=ExtResource("1_dogap")]
+layout_mode = 2
+tooltip_text = "How long (in seconds) the bullet lives for beofre disappearing"
+label = "Bullet Time To Live"
+default_value = 10.0
+
+[node name="bullet_origin" type="HBoxContainer" parent="."]
+layout_mode = 2
+script = ExtResource("3_rlr27")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="bullet_origin"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "The place where the bullets come from
+"
+text = "Orgin:"
+
+[node name="Button" type="Button" parent="bullet_origin"]
+layout_mode = 2
+text = "Set Origin
+"
+
+[node name="bullet_sprite" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 9
+script = ExtResource("4_l1t8t")
+label = "Bullet Sprite"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="bullet_sprite"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "The sprite for the bullet
+"
+text = "Bullet Sprite"
+
+[node name="TextureRect" type="TextureRect" parent="bullet_sprite"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.05
+texture = SubResource("ImageTexture_edk8f")
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="bullet_sprite"]
+layout_mode = 2
+text = "other image"
+
+[node name="SpinBox" type="SpinBox" parent="bullet_sprite"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+value = 16.0
+prefix = "Size:"
+suffix = "px"
+custom_arrow_step = 1.0
+
+[node name="FileDialog" type="FileDialog" parent="."]
+unique_name_in_owner = true
+title = "Open a File or Directory"
+initial_position = 5
+size = Vector2i(532, 532)
+ok_button_text = "Open"
+file_mode = 3
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*.exr")
+show_hidden_files = true
+
+[connection signal="pressed" from="bullet_origin/Button" to="bullet_origin" method="_on_button_pressed"]
+[connection signal="pressed" from="bullet_sprite/Button" to="bullet_sprite" method="_on_button_pressed"]
+[connection signal="value_changed" from="bullet_sprite/SpinBox" to="bullet_sprite" method="_on_spin_box_value_changed"]
+[connection signal="file_selected" from="FileDialog" to="bullet_sprite" method="_on_file_dialog_file_selected"]
