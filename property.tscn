@@ -11,6 +11,8 @@ script = ExtResource("1_mwi6d")
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
+tooltip_text = "Test
+"
 
 [node name="TextEdit" type="SpinBox" parent="."]
 layout_mode = 2

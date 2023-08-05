@@ -17,4 +17,9 @@ func _ready():
 				menu.name = "Shape " + str(index) 
 			index = index + 1
 			add_child(menu)
+			$%AddShapeButton.number = index
 			menu.from_shape_data(data)
+
+
+func _on_button_2_pressed():
+	get_current_tab_control().queue_free()

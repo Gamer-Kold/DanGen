@@ -15,5 +15,6 @@ var bullet_acceleration : float
 var bullet_ttl : int
 var bullet_sprite_path : String
 var bullet_sprite : Image
+var index : int
 var image_size : int
 var origin : Vector2

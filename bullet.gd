@@ -9,6 +9,7 @@ func _ready():
 	time = 0
 	texture = bullet_sprite
 	speed = shape_data.bullet_speed
+	z_index = shape_data.index
 
 func _process(delta):
 	time = time + delta
